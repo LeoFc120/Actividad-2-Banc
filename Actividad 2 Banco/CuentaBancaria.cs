@@ -30,25 +30,20 @@ namespace Actividad_2_Banco
             opcion = int.Parse(Console.ReadLine());
             
             int saldo = Saldo;
+            int reti=0,resta=0,depo=0,suma = 0;
             switch (opcion)
             {
                 case 1:
                     Console.WriteLine("Retirar");
-                    int reti = 0;
                     reti = int.Parse(Console.ReadLine());
-                    int resta = 0;
                     resta = saldo - reti;
                     Console.WriteLine("Su saldo ahora es: " + resta);
-                    
                     break;
                 case 2:
                     Console.WriteLine("Depositar");
-                    int depo = 0;
                     depo = int.Parse(Console.ReadLine());
-                    int suma = 0;
                     suma = saldo + depo;
                     Console.WriteLine("Su saldo aumento a: " + suma);
-                    
                     break;
                 case 3:
                     Console.WriteLine("Consultar saldo");
